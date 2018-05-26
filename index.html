@@ -15,22 +15,21 @@
         <img src="hyf-logo.png" alt="site logo">
         <ul class="menulink">
             <li>
-                <a href="">ABout ME</a>
+                <a href="#about_me">ABout ME</a>
             </li>
             <li>
-                <a href="">SkiLLs</a>
+                <a href="#skills">SkiLLs</a>
             </li>
             <li>
-                <a href="">Education</a>
+                <a href="#portfolio">Portfoli</a>
             </li>
         </ul>
-
     </header>
 
     <!--Container -->
     <div class="container content">
 
-        <table>
+        <table id="about_me">
             <tr>
                 <!-- Profile picture column-->
                 <td class="profile_img_col">
@@ -100,7 +99,7 @@
 
 
 
-        <div class="section">
+        <div class="section" id="skills">
             <h3>My Skills</h3>
             <h4>Web Development Skills</h4>
             <p class="subtext">lorem ipsunm samd n dhs dns cnjsndsc ksdn jksa jksa dnjkasdnkjas djkasm,ndm njcjxcjknmxzzjk sakanjakn</p>
@@ -135,7 +134,7 @@
 
 
         <!-- Portfoli -->
-        <div class="section">
+        <div class="section" id="portfolio">
             <h3>Portfolio</h3>
             <h4>Web Development Skills</h4>
             <p class="subtext">lorem ipsunm samd n dhs dns cnjsndsc ksdn jksa jksa dnjkasdnkjas djkasm,ndm njcjxcjknmxzzjk sakanjakn</p>
@@ -195,6 +194,9 @@
         window.onscroll = function () {
             myFunction()
         };
+
+        window.addEventListener("hashchange", function() { scrollBy(0, -100) })
+
 
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
