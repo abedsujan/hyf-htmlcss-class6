@@ -11,11 +11,8 @@
 </head>
 
 <body>
-
-    <header class="navbar">
-
+    <header class="navbar" id="myHeader">
         <img src="hyf-logo.png" alt="site logo">
-
         <ul class="menulink">
             <li>
                 <a href="">ABout ME</a>
@@ -23,7 +20,6 @@
             <li>
                 <a href="">SkiLLs</a>
             </li>
-
             <li>
                 <a href="">Education</a>
             </li>
@@ -32,7 +28,7 @@
     </header>
 
     <!--Container -->
-    <div class="container">
+    <div class="container content">
 
         <table>
             <tr>
@@ -48,7 +44,7 @@
                     <h1>Hi I'm
                         <span>Abed Sujan</span>
                     </h1>
-                    <p>Web Developer</p>
+                    <h2 class="title">Web Developer</h2>
                     <p>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                         ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
@@ -94,28 +90,123 @@
                     </table>
 
                     <!-- Social link-->
-
                     <div class="social_icon">
-
                         <i class="fab fa-github"></i>
-
-
                         <i class="fab fa-linkedin-in"></i>
                     </div>
-
                 </td>
             </tr>
         </table>
-        
 
-        <div class="homework">
-            <img src="skills.png" alt="skills">
-            <img src="portfolio.png" alt="profoli">
-            <img src="news.png" alt="news">
+
+
+        <div class="section">
+            <h3>My Skills</h3>
+            <h4>Web Development Skills</h4>
+            <p class="subtext">lorem ipsunm samd n dhs dns cnjsndsc ksdn jksa jksa dnjkasdnkjas djkasm,ndm njcjxcjknmxzzjk sakanjakn</p>
+
+            <div class="skill_progressbar">
+                <h6>HTML</h6>
+                <div class="progress-bar orange ">
+                    <span style="width: 80%">80%</span>
+                </div>
+            </div>
+
+            <div class="skill_progressbar">
+                <h6>CSS</h6>
+                <div class="progress-bar orange">
+                    <span style="width: 70%">70%</span>
+                </div>
+            </div>
+            <div class="skill_progressbar">
+                <h6>Javascript</h6>
+                <div class="progress-bar orange">
+                    <span style="width: 40%">40%</span>
+                </div>
+            </div>
+
+            <div class="skill_progressbar">
+                <h6>Database</h6>
+                <div class="progress-bar orange">
+                    <span style="width: 90%">90%</span>
+                </div>
+            </div>
         </div>
+
+
+        <!-- Portfoli -->
+        <div class="section">
+            <h3>Portfolio</h3>
+            <h4>Web Development Skills</h4>
+            <p class="subtext">lorem ipsunm samd n dhs dns cnjsndsc ksdn jksa jksa dnjkasdnkjas djkasm,ndm njcjxcjknmxzzjk sakanjakn</p>
+
+            <div class="flex-container">
+                <div>ddddd
+                    <figure>
+                        <img src="img/portfolio-1.png" alt="The Pulpit Rock" width="330">
+                        <figcaption>A view of the pulpit</figcaption>
+                        <span>Fig wewe</span>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/portfolio-2.png" alt="The Pulpit Rock" width="330">
+                        <figcaption> A view of the pulpit</figcaption>
+                        <span>Fig wewe</span>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/portfolio-3.png" alt="The Pulpit Rock" width="330">
+                        <figcaption>A view of the pulpit</figcaption>
+                        <span>Fig wewe</span>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/portfolio-4.png" alt="The Pulpit Rock" width="330">
+                        <figcaption>A view of the pulpit</figcaption>
+                        <span>Fig wewe</span>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/portfolio-5.png" alt="The Pulpit Rock" width="330">
+                        <figcaption>A view of the pulpit</figcaption>
+                        <span>Fig wewe</span>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/portfolio-6.png" alt="The Pulpit Rock" width="330">
+                        <figcaption>A view of the pulpit</figcaption>
+                        <span>Fig wewe</span>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- end of container-->
     <img src="footer.png" alt="footer">
+
+
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
